@@ -1,6 +1,8 @@
 provider "aws" {
   region = var.region
-
+          aws-access-key-id: AWS_ACCESS_KEY
+          aws-secret-access-key: AWS_ACCESS_SECRET
+          aws-region: AWS_REGION_NAME
   default_tags {
     tags = {
       hashicorp-learn = "circleci"
