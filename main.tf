@@ -1,10 +1,9 @@
-provider "aws" {
-  region = var.region
-          
-default_tags {
-    tags = {
-      hashicorp-learn = "circleci"
-    }
+terraform{
+required_provider {
+aws = {
+source = "hashicorp/aws"
+version = "3.44.0"
+region = var.region          
   }
 }
 
