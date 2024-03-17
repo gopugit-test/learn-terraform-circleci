@@ -63,7 +63,6 @@ workflows:
   plan_approve_apply:
     jobs:
       - plan-apply
-          context: gopterraform
       - hold-apply:
           type: approval
           requires:
