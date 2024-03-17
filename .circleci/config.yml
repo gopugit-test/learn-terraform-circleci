@@ -1,5 +1,6 @@
 version: 2
-
+orbs:
+  terraform: circleci/terraform@1.2.0
 jobs:
   plan-apply:
     working_directory: /tmp/project
