@@ -14,12 +14,6 @@ resource "aws_s3_bucket" "app" {
   force_destroy = true
 }
 
-resource "aws_s3_bucket_ownership_controls" "app" {
-  bucket = aws_s3_bucket.app.id
-  rule {
-    object_ownership = "BucketOwnerPreferred"
-  }
-}
 
 resource "aws_s3_bucket_public_access_block" "app" {
   bucket = aws_s3_bucket.app.id
